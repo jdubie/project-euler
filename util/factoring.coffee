@@ -20,6 +20,8 @@ f =
     i = 1
     if primeList? and primeList.length > 0
       for i in primeList 
+        if i > Math.sqrt n
+          break
         if f.divides n, i
           return false
 
