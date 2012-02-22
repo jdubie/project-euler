@@ -50,7 +50,7 @@ scoreGrid = (m) ->
   gridScore.push diag_one
   gridScore.push diag_two
   return _.max gridScore
-      
+
 
 matrix = []
 _.each rows, (row) ->
@@ -66,6 +66,16 @@ for i in [0..matrix[0].length - N]
 
 console.log _.max scores
 
+
+# diagonal test case
+
+# grid = [
+#   [2, 2, 2, 2]
+#   [2, 2, 2, 2]
+#   [2, 2, 4, 2]
+#   [2, 2, 2, 3]
+# ]
+# console.log scoreGrid grid
 
 
 
