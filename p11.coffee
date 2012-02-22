@@ -42,8 +42,8 @@ scoreGrid = (m) ->
       sum * e[i]
     gridScore.push _.reduce m, reduceCol, 0
   # compute diagonal
-  diag_one = 0
-  diag_two = 0
+  diag_one = 1
+  diag_two = 1
   for i in [0...N]
     diag_one *= m[i][i]
     diag_two *= m[N-(i+1)][i]
